@@ -25,7 +25,7 @@ class Settings(BaseSettings):
     API_V1_PREFIX: str = "/api"
 
     # Database
-    DATABASE_URL: str = "postgresql+psycopg://postgres:postgres@localhost:5432/geomeasure_db"
+    DATABASE_URL: str = "sqlite:///./geomeasure_db.sqlite3"
 
     # File Upload & Storage
     # Default upload storage path outside the source tree
