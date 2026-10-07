@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Agricultural Survey Zones</name>
+    <description>Synthetic polygon survey zones in Bangalore, India</description>
+    <Placemark>
+      <name>Survey Zone Alpha</name>
+      <description>Northern crop plot</description>
+      <ExtendedData>
+        <Data name="crop_type"><value>Wheat</value></Data>
+        <Data name="surveyor"><value>Aereo Drone Team</value></Data>
+      </ExtendedData>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              77.5850,12.9710,0
+              77.5870,12.9710,0
+              77.5870,12.9730,0
+              77.5850,12.9730,0
+              77.5850,12.9710,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>Survey Zone Beta</name>
+      <description>Southern orchard plot</description>
+      <ExtendedData>
+        <Data name="crop_type"><value>Mango</value></Data>
+      </ExtendedData>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              77.5900,12.9650,0
+              77.5930,12.9650,0
+              77.5930,12.9680,0
+              77.5900,12.9680,0
+              77.5900,12.9650,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+  </Document>
+</kml>

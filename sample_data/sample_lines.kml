@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Drone Flight Survey Trajectories</name>
+    <Placemark>
+      <name>Flight Corridor 101</name>
+      <description>Transmission line inspection corridor</description>
+      <ExtendedData>
+        <Data name="voltage_kv"><value>220</value></Data>
+      </ExtendedData>
+      <LineString>
+        <coordinates>
+          77.5800,12.9700,50
+          77.5850,12.9750,50
+          77.5900,12.9780,50
+          77.5950,12.9800,50
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Boundary Patrol Path</name>
+      <description>Perimeter inspection line</description>
+      <LineString>
+        <coordinates>
+          77.6000,12.9500,30
+          77.6050,12.9520,30
+          77.6100,12.9550,30
+        </coordinates>
+      </LineString>
+    </Placemark>
+  </Document>
+</kml>

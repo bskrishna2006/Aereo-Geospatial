@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Comprehensive Mixed Survey</name>
+    <!-- Feature 0: Valid Polygon -->
+    <Placemark>
+      <name>Main Campus Zone</name>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              77.5850,12.9710,0
+              77.5870,12.9710,0
+              77.5870,12.9730,0
+              77.5850,12.9730,0
+              77.5850,12.9710,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <!-- Feature 1: Valid LineString -->
+    <Placemark>
+      <name>Access Road Line</name>
+      <LineString>
+        <coordinates>
+          77.5850,12.9710,0
+          77.5860,12.9715,0
+          77.5880,12.9720,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+
+    <!-- Feature 2: Valid Point (no measurement required) -->
+    <Placemark>
+      <name>Survey Mast Point</name>
+      <Point>
+        <coordinates>77.5865,12.9722,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <!-- Feature 3: Self-intersecting 'Bowtie' Polygon (tests repair logic) -->
+    <Placemark>
+      <name>Self-Intersecting Boundary</name>
+      <description>Invalid figure-eight bowtie polygon to test automated geometry repair</description>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              77.5800,12.9700,0
+              77.5820,12.9720,0
+              77.5800,12.9720,0
+              77.5820,12.9700,0
+              77.5800,12.9700,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+  </Document>
+</kml>
